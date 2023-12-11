@@ -1,4 +1,5 @@
 #include "../include/core/app.h"
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
@@ -49,3 +50,15 @@ void destroyApp(app *handle)
     free(handle);
 }
 
+SDL_Event getEvent(app *handle)
+{
+    while(SDL_PollEvent(&handle->event))
+    {
+        return handle->event;
+    }
+}
+
+void refreshView(app *handle)
+{
+    SDL_RenderPresent(handle->renderer);
+}

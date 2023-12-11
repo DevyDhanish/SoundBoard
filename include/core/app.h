@@ -11,8 +11,8 @@ struct APP
     SDL_Renderer *renderer;
     uint16_t windowHeight;
     uint16_t windowWidth;
-    char *title;
     SDL_Event event;
+    char *title;
     bool isRunning;
 };
 
@@ -21,5 +21,9 @@ typedef struct APP app;
 app *createApp(uint16_t w, uint16_t h, char *t);
 
 void destroyApp(app *);
+
+SDL_Event getEvent(app *);
+
+void refreshView(app *);
 
 #endif
