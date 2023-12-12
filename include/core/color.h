@@ -18,5 +18,6 @@ extern const color GREEN;
 extern const color BLUE;
 extern const color WHITE;
 extern const color DARK_GRAY;
+extern const color DARK_GRAY_43;
 
 #endif

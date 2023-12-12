@@ -5,3 +5,4 @@ const color GREEN = { 0, 255, 0, 255 };
 const color BLUE = { 0, 0, 255, 255 };
 const color WHITE = { 255, 255, 255, 255 };
 const color DARK_GRAY = { 28, 28, 28, 255 };
+const color DARK_GRAY_43 = { 43, 43, 43, 255 };
